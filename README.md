@@ -1,2 +1,2 @@
 # pythonexercicio_modulos
- modulos/pacotes
+ Exercícios de módulos e pacotes
