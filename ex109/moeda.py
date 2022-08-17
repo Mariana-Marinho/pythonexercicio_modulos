@@ -1,34 +1,20 @@
 def moeda(numero):
-    return float(f'{numero:.2f}')
+    return f'{numero:.2f}'
 
 
 def aumentar(numero, botar, f=False):
-    if f:
-        numero = moeda(numero)
-        return f'R$ {numero * (100 + botar) / 100}'
-    else:
-        return numero*(100+botar)/100
+    final = numero*(100+botar)/100
+    return final if f is False else moeda(final)
 
 
 def diminuir(numero, tirar, f=False):
-    if f:
-        numero = moeda(numero)
-        return f'R$ {numero*(100-tirar)/100}'
-    else:
-        return numero*(100-tirar)/100
+    final = numero*(100-tirar)/100
+    return final if f is False else moeda(final)
 
 
 def dobro(numero, f=False):
-    if f:
-        numero = moeda(numero)
-        return f'R$ {numero*2}'
-    else:
-        return numero*2
+    return numero*2 if f is False else moeda(numero*2)
 
 
 def metade(numero, f=False):
-    if f:
-        numero = moeda(numero)
-        return f'R$ {numero/2}'
-    else:
-        return numero/2
+    return numero/2 if f is False else moeda(numero/2)

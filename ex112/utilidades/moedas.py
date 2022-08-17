@@ -11,7 +11,7 @@ def resumo(numero, aumenta, diminui):
 
 
 def moeda(numero):
-    return f'R$ {numero:.2f}'
+    return f'R$ {float(numero):.2f}'
 
 
 def aumentar(numero, botar, f=False):

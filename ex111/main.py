@@ -1,6 +1,6 @@
-from ex111.utilidades import moedas, dados
+from ex111.utilidades import moeda
 
-valor = input('digite o preço do produto em R$: ')
-mais = input('aumentá-lo em quantos %? ')
-menos = input('diminuí-lo em quantos %? ')
-moedas.resumo(valor, mais, menos)
+valor = float(input('preço: '))
+mais = float(input('aumentar em %: '))
+menos = float(input('diminuir em %: '))
+moeda.resumo(valor, mais, menos)
